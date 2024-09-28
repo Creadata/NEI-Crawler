@@ -73,6 +73,74 @@
             <p>Find usage instructions and privacy information here.</p>
             <!-- Help content -->
             
+                    <h1 id="nei-crawler-tool-user-guide">NEI-Crawler Tool - User Guide</h1>
+                    <h2 id="introduction">Introduction</h2>
+                    <p>The NEI-Crawler Tool is designed to streamline the extraction and classification of Named Entities of Interest (NEIs) from large datasets, particularly in the context of cybercrime data analysis. It leverages Named Entity Recognition (NER) techniques and custom Regular Expressions (RegEx) to identify and categorize entities relevant to Digital Forensics and Cyber Investigation (DFCI).</p>
+                    <h2 id="features">Features</h2>
+                    <ul>
+                    <li><strong>Data Upload</strong>: Upload raw data files such as text logs, chat transcripts, or other unstructured data sources.</li>
+                    <li><strong>NEI Configuration</strong>: Define custom NEI groups and associate them with specific RegEx patterns.</li>
+                    <li><strong>Entity Recognition</strong>: Scan uploaded data to extract and classify entities based on NEI groups.</li>
+                    <li><strong>Results Visualization</strong>: View extracted entities grouped by NEI categories.</li>
+                    <li><strong>Export Options</strong>: Export the results in various formats compatible with other forensic tools.</li>
+                    <li><strong>Integration Capabilities</strong>: Interfaces to integrate with existing digital forensic tools.</li>
+                    <li><strong>Privacy Compliance</strong>: Runs locally to ensure data privacy and compliance with regulations.</li>
+                    </ul>
+                    <h2 id="getting-started">Getting Started</h2>
+                    <h3 id="-1-data-upload-"><strong>1. Data Upload</strong></h3>
+                    <ul>
+                    <li>Navigate to the <strong>Data Upload</strong> section.</li>
+                    <li>Click the <strong>&quot;Choose File&quot;</strong> button to select your data file (supported formats: <code>.txt</code>, <code>.csv</code>, <code>.json</code>).</li>
+                    <li>Click <strong>&quot;Upload&quot;</strong> to submit the file to the tool.</li>
+                    </ul>
+                    <h3 id="-2-nei-configuration-"><strong>2. NEI Configuration</strong></h3>
+                    <ul>
+                    <li>Go to the <strong>NEI Configuration</strong> section.</li>
+                    <li><strong>Add NEI Groups</strong>:<ul>
+                    <li>Click <strong>&quot;Add NEI Group&quot;</strong>.</li>
+                    <li>Enter a unique name for the NEI group (e.g., &quot;IP Addresses&quot;).</li>
+                    </ul>
+                    </li>
+                    <li><strong>Assign RegEx Patterns</strong>:<ul>
+                    <li>For each NEI group, input the RegEx patterns that match the entities of interest.</li>
+                    <li>Save the configurations.</li>
+                    </ul>
+                    </li>
+                    </ul>
+                    <h3 id="-3-entity-recognition-"><strong>3. Entity Recognition</strong></h3>
+                    <ul>
+                    <li>Navigate to the <strong>Entity Recognition</strong> section.</li>
+                    <li>Click <strong>&quot;Start NER Process&quot;</strong> to begin scanning the uploaded data.</li>
+                    <li>The tool will process the data and extract entities based on your NEI configurations.</li>
+                    <li>A status message will indicate when the process is complete.</li>
+                    </ul>
+                    <h3 id="-4-viewing-results-"><strong>4. Viewing Results</strong></h3>
+                    <ul>
+                    <li>Go to the <strong>Results</strong> section.</li>
+                    <li>View the extracted entities grouped by NEI categories.</li>
+                    <li>Use the search or filter options to locate specific entities.</li>
+                    </ul>
+                    <h3 id="-5-exporting-results-"><strong>5. Exporting Results</strong></h3>
+                    <ul>
+                    <li>In the <strong>Results</strong> section, click the <strong>&quot;Export Results&quot;</strong> button.</li>
+                    <li>Choose the desired format for export (e.g., <code>.csv</code>, <code>.json</code>).</li>
+                    <li>The results will be downloaded to your local machine.</li>
+                    </ul>
+                    <h3 id="-6-settings-and-integration-"><strong>6. Settings and Integration</strong></h3>
+                    <ul>
+                    <li>Access the <strong>Settings</strong> section to configure integrations with other forensic tools.</li>
+                    <li>Set preferences for data formats and interface options.</li>
+                    </ul>
+                    <h2 id="tips">Tips</h2>
+                    <ul>
+                    <li><strong>Valid RegEx Patterns</strong>: Ensure your RegEx patterns are correct to avoid missing entities.</li>
+                    <li><strong>Data Privacy</strong>: Since the tool runs locally, your data remains secure on your machine.</li>
+                    <li><strong>Regular Updates</strong>: Keep your NEI configurations updated based on evolving investigative needs.</li>
+                    </ul>
+                    <h2 id="support">Support</h2>
+                    <p>For questions or support, please contact the developer at [your-email@example.com].</p>
+                    <hr>
+                    </ul>
             <p>[Help content will go here]</p>
         </section>
     </main>
