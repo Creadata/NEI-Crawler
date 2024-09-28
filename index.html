@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEI-Crawler Tool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>NEI-Crawler Tool</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="active" data-page="home">Home</a></li>
+                <li><a href="#" data-page="upload">Data Upload</a></li>
+                <li><a href="#" data-page="configuration">NEI Configuration</a></li>
+                <li><a href="#" data-page="recognition">Entity Recognition</a></li>
+                <li><a href="#" data-page="results">Results</a></li>
+                <li><a href="#" data-page="settings">Settings</a></li>
+                <li><a href="#" data-page="help">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="page">
+            <h2>Welcome to NEI-Crawler</h2>
+            <p>The NEI-Crawler tool helps you extract and classify Named Entities of Interest from your data using advanced NER and LLM technologies.</p>
+            <p>Get started by uploading your data or configuring your NEI groups.</p>
+        </section>
+        <!-- Data Upload Page -->
+        <section id="upload" class="page" style="display: none;">
+            <h2>Data Upload</h2>
+            <form id="upload-form">
+                <label for="data-file">Select Data File:</label>
+                <input type="file" id="data-file" name="data-file" accept=".txt,.csv,.json" required>
+                <input type="submit" value="Upload">
+            </form>
+        </section>
+        <!-- NEI Configuration Page -->
+        <section id="configuration" class="page" style="display: none;">
+            <h2>NEI Group Configuration</h2>
+            <p>Define or select NEI groups for your analysis.</p>
+            <!-- Configuration options -->
+            <!-- For simplicity, using placeholder content -->
+            <p>[Configuration options will go here]</p>
+        </section>
+        <!-- Entity Recognition Page -->
+        <section id="recognition" class="page" style="display: none;">
+            <h2>Entity Recognition</h2>
+            <button id="start-ner">Start NER Process</button>
+            <p id="ner-status"></p>
+        </section>
+        <!-- Results Page -->
+        <section id="results" class="page" style="display: none;">
+            <h2>Results</h2>
+            <p>View extracted entities grouped by NEI categories.</p>
+            <!-- Placeholder for results -->
+            <p>[Results will be displayed here]</p>
+            <button id="export-results">Export Results</button>
+        </section>
+        <!-- Settings Page -->
+        <section id="settings" class="page" style="display: none;">
+            <h2>Settings & Integration</h2>
+            <p>Configure integration with existing forensic tools.</p>
+            <!-- Settings options -->
+            <p>[Settings options will go here]</p>
+        </section>
+        <!-- Help Page -->
+        <section id="help" class="page" style="display: none;">
+            <h2>Help & Documentation</h2>
+            <p>Find usage instructions and privacy information here.</p>
+            <!-- Help content -->
+            
+            <p>[Help content will go here]</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 NEI-Crawler Tool</p>
+    </footer>
+    <!-- Link to external JS -->
+    <script src="script.js"></script>
+</body>
+</html>
